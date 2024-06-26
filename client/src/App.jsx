@@ -1,11 +1,12 @@
-
+import Board from "./components/Board"
 
 function App() {
 
   return (
-    <>
-   <h1>Hi TictacT#Ie</h1>
-    </>
+    <div className="app">
+      <h1>Tic Tac Toe Forever</h1>
+      <Board />
+    </div>
   )
 }
 

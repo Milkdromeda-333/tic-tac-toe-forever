@@ -1,0 +1,48 @@
+:root {
+    
+}
+
+/* APP */
+.app {
+    padding-inline: 5px;
+}
+
+/* BOARD */
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.board__box {
+    height: 150px;
+     width: 32%;
+     border: 3px solid transparent;
+}
+
+.board__box_1,
+.board__box_2,
+.board__box_4,
+.board__box_5 {
+    border-right-color:  black;
+    border-bottom-color:  black;
+}
+
+.board__box_3,
+.board__box_6 {
+    border-bottom-color:  black;;
+}
+
+.board__box_7,
+.board__box_8 {
+    border-right-color:  black;;
+}
+
+@media  (min-width: 1124px) {
+    .board {
+        width: 80%;
+    }
+}
