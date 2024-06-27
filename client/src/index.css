@@ -19,8 +19,12 @@
 
 .board__box {
     height: 150px;
-     width: 32%;
-     border: 3px solid transparent;
+    width: 32%;
+    border: 3px solid transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .board__box_1,
@@ -33,12 +37,51 @@
 
 .board__box_3,
 .board__box_6 {
-    border-bottom-color:  black;;
+    border-bottom-color:  black;
 }
 
 .board__box_7,
 .board__box_8 {
-    border-right-color:  black;;
+    border-right-color:  black;
+}
+
+.player-symbol__x-symbol {
+    position: relative;
+      /* make this responsive... */
+    height: 150px; 
+    width: 150px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.player-symbol__x-symbol::before,
+.player-symbol__x-symbol::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 10px; /* cross thickness */
+    background-color: #d1000a;
+/* background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.player-symbol__x-symbol::before {
+    transform: rotate(45deg);
+}
+
+.player-symbol__x-symbol::after {
+    transform: rotate(-45deg);
+}
+
+.player-symbol__o-symbol {
+  position: relative;
+  /* make this responsive... */
+    height: 100px; 
+    width: 100px;  
+    border-radius: 100%;
+    border: 10px solid red;
 }
 
 @media  (min-width: 1124px) {
