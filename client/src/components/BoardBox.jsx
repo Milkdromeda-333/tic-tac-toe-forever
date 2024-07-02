@@ -4,14 +4,22 @@ import PlayerSymbol from "./PlayerSymbol";
 
 export default function BoardBox(props) {
 
+    const { handleClick, symbol, index } = props;
+
     return (
-        <div className={` board__box board__box_${props.index}`}>
+        <div
+            className={` board__box board__box_${index}`}
+            onClick={() => {
+                handleClick(!!symbol) ;
+            }}
+        >
             <PlayerSymbol symbol={props.symbol} />
         </div>
     )
 }
 
 BoardBox.propTypes = {
-    index: PropTypes.number,
-    symbol:PropTypes. string
+    handleClick: PropTypes.func,
+    symbol: PropTypes.string,
+    index: PropTypes.number
 }
