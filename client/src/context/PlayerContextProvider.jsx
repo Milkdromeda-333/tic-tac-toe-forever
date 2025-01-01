@@ -17,14 +17,14 @@ function PlayerContextProvider({ children }) {
         symbol: "o"
     });
 
-    function handleUserTurn(index,) {
+    function handleUserTurn(index) {
         setPlayer1(prev => {
             console.log({ ...prev, plays: [...prev.plays, index] })
             return { ...prev, plays: [...prev.plays, index] };
         })
     }
 
-    function handleOpponentTurn(index) {
+    function handleRobotTurn(index) {
         setPlayer2(prev => {
             console.log({ ...prev, plays: [...prev.plays, index] })
             return { ...prev, plays: [...prev.plays, index] };
@@ -36,7 +36,7 @@ function PlayerContextProvider({ children }) {
             player1,
             player2,
             handleUserTurn,
-            handleOpponentTurn
+            handleRobotTurn
         }} >
             {children}
         </PlayerContext.Provider>

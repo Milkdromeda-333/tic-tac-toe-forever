@@ -1,0 +1,21 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "A tictactoe game that could go on forever",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milkdromeda-333/tic-tac-toe-forever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Milkdromeda-333/tic-tac-toe-forever/issues"
+  },
+  "homepage": "https://github.com/Milkdromeda-333/tic-tac-toe-forever#readme"
+}
